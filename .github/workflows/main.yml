@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to install latex and test if pdf file can be built from tex file
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Build and run docker
       uses: ./
