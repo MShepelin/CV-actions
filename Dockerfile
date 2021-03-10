@@ -5,7 +5,7 @@ FROM fedora:34
 #		texlive-base \
 #		texlive-scheme-full
 
-COPY main.tex ./main.tex
-COPY init.sh ./init.sh
+COPY main.tex /main.tex
+COPY init.sh /init.sh
 
-CMD ["init.sh"]
+CMD ["/init.sh"]
