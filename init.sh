@@ -2,7 +2,6 @@
 
 mkdir build
 cd build
-#pdflatex ../main.tex -interaction=nonstopmode
-touch test
-touch test.c
+mv ../main.tex ./main.tex
+pdflatex main.tex -interaction=nonstopmode
 ls
