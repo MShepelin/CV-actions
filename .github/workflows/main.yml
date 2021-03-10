@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  pdflatex_job:
+    runs-on: ubuntu-latest
+    name: A job to install latex and test if pdf file can be built from tex file
+    steps:
+    - name: Build and run docker
+      uses: actions/@v1
