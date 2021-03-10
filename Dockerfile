@@ -10,5 +10,4 @@ RUN yum update -y && yum install -y \
 COPY main.tex build/main.tex
 CMD ["cd", "build"]
 CMD ["pdflatex", "main.tex", "-interaction=nonstopmode"]
-
-ENTRYPOINT ["ls"]
+CMD ["ls"]
